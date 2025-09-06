@@ -72,7 +72,7 @@ export default function PricingCard() {
         </div>
 
         {/* Billing toggle */}
-        <div className="flex items-center justify-center gap-3 text-sm md:text-base">
+        <div className="flex items-center justify-center gap-3 text-sm md:text-lg">
           <span className="text-muted-foreground">Monthly Billing</span>
           <Switch checked={yearly} onCheckedChange={setYearly} />
           <div className="flex items-center gap-2">
@@ -95,7 +95,7 @@ export default function PricingCard() {
               (feature) => (
                 <li key={feature} className="flex items-center justify-center md:justify-start gap-2">
                   <Image src="/images/icon-check.svg" height={10} width={10} alt="checkmark" />
-                  <span>{feature}</span>
+                  <span className="text-start">{feature}</span>
                 </li>
               )
             )}
